@@ -13,7 +13,8 @@
     "dev": "npx nodemon index",
     "start": "pm2 start index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "list-server": "pm2 list"
+    "list-server": "pm2 list",
+    "stop-server": "pm2 stop all"
   },
   "dependencies": {
     "cors": "^2.8.5",
