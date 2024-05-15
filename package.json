@@ -11,8 +11,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx nodemon index",
-    "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pm2 start index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "list-server": "pm2 list"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -22,6 +23,7 @@
     "nodemailer": "^6.9.13",
     "pino": "^9.0.0",
     "pino-http": "^9.0.0",
-    "pino-pretty": "^11.0.0"
+    "pino-pretty": "^11.0.0",
+    "pm2": "^5.3.1"
   }
 }
